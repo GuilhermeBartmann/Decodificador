@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f3f5fc;
+  color: #f6f6f6;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.logo {
+  width: 80%;
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8%;
+  gap: 80px;
+}
+
+.avisoEntrada {
+  display: flex;
+  gap: 8px;
+}
+
+.imagemExclamacao {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.textoAviso {
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  color: #343a40;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  
+}
+
+.insTexto {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 680px;
+  height: 700px;
+  margin-bottom: 55px; 
+  user-select: none;
+  resize: none;
+  border: none;
+  background-color: #f3f5fc;
+  outline: none;
+}
+
+.apresentacao__botoes {
+  display: flex;
+  gap: 16px;
+}
+
+.b__criptografar,
+.b__descriptografar {
+  width: 328px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.b__criptografar {
+  background-color: #22e4fd;
+  color: #ffffff;
+}
+
+.b__descriptografar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+}
+
+.b__criptografar:hover {
+  background-color: #08c3db;
+}
+
+.b__descriptografar:hover {
+  background-color: #bfc6cf;
+}
+
+
+.b__copiar {
+  width: 328px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #22e4fd;
+  color: #ffffff;
+  visibility: hidden;
+  z-index: 1;
+  margin-top: 502px ;
+}
+
+
+
+
+.b__copiar:hover {
+  background-color: #08c3db;
+}
+
+.saida__texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.caixa__saida {
+  text-align: left;
+  border: none;
+  resize: none;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: visible;
+  user-select: text;
+  width: 390px;
+  height: 700px;
+  visibility: hidden;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 10px 10px 2px grey; 
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+.imagem__sTexto {
+  margin: 0;
+  width: 50%;
+  visibility: visible;
+  z-index: 1;
+  position: relative;
+  top: 130px;
+}
+
+.mensagem {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 500px;
+  color: #343a40;
+  font-size: 1.875rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  visibility: visible;
+  
+}
+
+.mensagemDecript {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 500px;
+  color: #343a40;
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  visibility: visible;
+}
+
+.retangulo {
+  width: 400px;
+  height: 944px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  position: absolute;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+}
+
+.notaRodape {
+  color: #343a40;
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .texto {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cabecalho {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100%; 
+  }
+
+  .setorPrimario {
+    width: 100%;
+    align-items: center;
+  }
+
+  .insTexto {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .saida__texto {
+    align-items: center; 
+  }
+
+  .caixa__saida {
+    width: 80%;
+    height: 150px;
+    margin-top: 25px;
+    top: 400px;
+  }
+
+  .b__copiar {
+    width: 40%;
+    margin-top: 30px; 
+  }
+
+  .imagem__sTexto {
+    width: 40%;
+    position: relative;
+    top: 10px;
+  }
+
+  .retangulo {
+    width: 100%;
+    height: 250px;
+  }
+
+  .mensagem,
+  .mensagemDecript {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    left: 80px;
+  }
+
+
+  .mensagem {
+    font-size: 1rem;
+  }
+
+  .mensagemDecript {
+    font-size: 0.8rem;
+  }
+
+  .rodape {
+    align-items: center;
+  }
+
+  .notaRodape {
+    font-size: 1rem;
+    text-align:center;
+  }
+}
+
+  
