@@ -226,8 +226,8 @@ body {
 @media (max-width: 1200px) {
   .texto {
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; 
+    justify-content: center;
   }
 
   .cabecalho {
@@ -235,45 +235,65 @@ body {
   }
 
   .logo {
-    width: 100%; 
+    width: 90%;
+    padding: 10%; 
   }
 
   .setorPrimario {
     width: 100%;
-    align-items: center;
+    justify-content: space-between; 
   }
 
   .insTexto {
-    width: 100%;
+    width: 90%; 
     height: 150px;
     margin-bottom: 20px;
+    padding: 5%; 
+    font-size: 1.5rem; 
+  }
+
+  .textoAviso {
+    font-size: 0.8rem; 
+  }
+
+
+
+  .apresentacao__botoes {
+    justify-content: center; 
+  }
+
+  .b__criptografar,
+  .b__descriptografar {
+    padding: 3%;
+    width: 40%;
   }
 
   .saida__texto {
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
   }
 
   .caixa__saida {
     width: 80%;
     height: 150px;
-    margin-top: 25px;
-    top: 400px;
+    margin-top: 10px;
+    top: 450px;
   }
 
   .b__copiar {
-    width: 40%;
-    margin-top: 30px; 
+    width: 400%; 
+    margin-top: 200px; 
+    padding: 30%; 
   }
 
   .imagem__sTexto {
-    width: 40%;
-    position: relative;
-    top: 10px;
+    display: none; 
   }
 
   .retangulo {
-    width: 100%;
-    height: 250px;
+    margin-top: 20px; 
+    width: 90%;
+    height: 300px;
   }
 
   .mensagem,
@@ -281,27 +301,25 @@ body {
     width: 70%;
     text-align: center;
     position: relative;
-    top: 150px;
-    left: 80px;
+    top: 50px;
+    left: 60px; 
   }
 
-
   .mensagem {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .mensagemDecript {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .rodape {
+    margin-top: 40px; 
     align-items: center;
   }
 
   .notaRodape {
-    font-size: 1rem;
-    text-align:center;
+    font-size: 0.8rem;
+    text-align: center; 
   }
 }
-
-  
