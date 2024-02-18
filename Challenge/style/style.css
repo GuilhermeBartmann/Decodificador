@@ -54,8 +54,8 @@ body {
   font-family: var(--font-primaria);
   font-size: 1.625rem;
   font-weight: 400;
-  margin-left: 200px;
-  margin-top: 10PX;
+  margin-left: 3%;
+  margin-top: 1%;
 }
 
 .switch {
@@ -136,13 +136,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4%;
-  gap: 80px;
+  margin: 2%;
+  gap: 2%;
 }
 
 .avisoEntrada {
   display: flex;
-  gap: 8px;
+  gap: 1%;
 }
 
 .imagemExclamacao {
@@ -167,8 +167,8 @@ body {
   font-size: 2rem;
   font-family: var(--font-primaria);
   font-weight: 400;
-  width: 680px;
-  height: 700px;
+  width: 68%;
+  height: 600px;
   border-radius: 32px;
   margin-bottom: 55px; 
   user-select: none;
@@ -225,7 +225,7 @@ body {
   color: var(--color);
   visibility: hidden;
   z-index: 1;
-  margin-top: 502px ;
+  margin-top: 402px ;
 }
 
 
@@ -316,7 +316,7 @@ body {
 
 .retangulo {
   width: 400px;
-  height: 944px;
+  height: 844px;
   background-color: var(--color-retangulo);
   border-radius: 32px;
   position: absolute;
@@ -383,10 +383,8 @@ body {
   }
 
   .textoAviso {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
-
-
 
   .apresentacao__botoes {
     justify-content: center; 
@@ -407,12 +405,12 @@ body {
     width: 80%;
     height: 150px;
     margin-top: 10px;
-    top: 450px;
+    top: 470px;
   }
 
   .b__copiar {
     width: 350%; 
-    margin-top: 200px; 
+    margin-top: 290px; 
     padding: 26%; 
   }
 
@@ -421,7 +419,7 @@ body {
   }
 
   .retangulo {
-    margin-top: 20px; 
+    margin-top: 70px; 
     width: 90%;
     height: 300px;
   }
@@ -444,7 +442,7 @@ body {
   }
 
   .rodape {
-    margin-top: 40px; 
+    margin-top: 20px; 
     align-items: center;
   }
 
