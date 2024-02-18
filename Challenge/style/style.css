@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /*cores da página*/
+  --cor-botao-cript: #22E4FD;
+  --cor-botao-decript: #D8DFE8;
+  --cor-botao-hover-cript: #08C3DB;
+  --cor-botao-hover-decript: #BFC6BF;
+  --cor-terciaria: #A27B5C;
+  --var-hover: #3F4E4F;
+  --background: #F3F5FC;
+  --color: #F6F6F6;
+  --color-decript: #0A3871;
+  --color-retangulo: #FFFFFF;
+
+  /* Modo Escuro */
+  --modo-escuro-bg: #232424;
+  --modo-escuro-color: #22E4FD;
+  --modo-escuro-bg-elementos: #FFFFFF;
+  --botao-modo-claro: #0A3871;
+  --botao-modo-escuro: #9b9b9b;
+  --cor-botao: #FFFFFF;
+
+  --font-primaria: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2%;
+  gap: 2%;
+  
+}
+
+.logo {
+  width: 7%;
+  height: auto;
+}
+
+.mEscuro {
+  color: var(--botao-modo-claro);
+  font-family: var(--font-primaria);
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-left: 200px;
+  margin-top: 10PX;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2%;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--botao-modo-claro);
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--cor-botao);
+  border-radius: 50%;
+  transition: .4s;
+}
+
+
+.switch input:checked + .slide {
+  background-color: var(--botao-modo-escuro);
+}
+
+
+.switch input:checked + .slide:before {
+  transform: translateX(20px);
+}
+
+
+.botaoModoEscuro {
+  padding: 0.2%;
+
+}
+
+
+.dark-mode  {
+  background-color: var(--modo-escuro-bg);
+  color: var(--modo-escuro-color);
+}
+
+.dark-mode .textoAviso,
+.dark-mode .mensagem,
+.dark-mode .mensagemDecript,
+.dark-mode .notaRodape,
+.dark-mode .mEscuro {
+  color: var(--modo-escuro-color);
+}
+
+
+.dark-mode .insTexto,
+.dark-mode .retangulo {
+  background-color: var(--modo-escuro-bg-elementos); 
+  color: var(--modo-escuro-color) 
+}
+
+
+.texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4%;
+  gap: 80px;
+}
+
+.avisoEntrada {
+  display: flex;
+  gap: 8px;
+}
+
+.imagemExclamacao {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.textoAviso {
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  color: #343a40;
+  font-size: 0.75rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  
+}
+
+.insTexto {
+  font-size: 2rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  width: 680px;
+  height: 700px;
+  border-radius: 32px;
+  margin-bottom: 55px; 
+  user-select: none;
+  resize: none;
+  border: none;
+  background-color: var(--background);
+  outline: none;
+}
+
+.apresentacao__botoes {
+  display: flex;
+  gap: 16px;
+}
+
+.b__criptografar,
+.b__descriptografar {
+  width: 328px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+}
+
+.b__criptografar {
+  background-color: var(--cor-botao-cript);
+  color: var(--color);
+}
+
+.b__descriptografar {
+  background-color: var(--cor-botao-decript);
+  color: var(--color-decript);
+}
+
+.b__criptografar:hover {
+  background-color: var(--cor-botao-hover-cript);
+}
+
+.b__descriptografar:hover {
+  background-color: var(--cor-botao-hover-decript);
+}
+
+
+.b__copiar {
+  width: 328px;
+  text-align: center;
+  border-radius: 24px;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  background-color: var(--cor-botao-cript);
+  color: var(--color);
+  visibility: hidden;
+  z-index: 1;
+  margin-top: 502px ;
+}
+
+
+
+
+.b__copiar:hover {
+  background-color: var(--cor-botao-cript);
+}
+
+.saida__texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.caixa__saida {
+  text-align: left;
+  border: none;
+  resize: none;
+  padding: 24px 0;
+  font-size: 0.75rem;
+  font-family: var(--font-primaria);
+  font-weight: 400;
+  position: absolute;
+  pointer-events: visible;
+  user-select: text;
+  width: 390px;
+  height: 700px;
+  visibility: hidden;
+  z-index: 1;
+  margin-top: -20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 10px 10px 2px grey; 
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--var-hover); 
+}
+
+
+.imagem__sTexto {
+  margin: 0;
+  width: 50%;
+  visibility: visible;
+  z-index: 1;
+  position: relative;
+  top: 130px;
+}
+
+.mensagem {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 500px;
+  color: #343a40;
+  font-size: 1.875rem;
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  visibility: visible;
+  
+}
+
+.mensagemDecript {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 500px;
+  color: #343a40;
+  font-size: 1.25rem;
+  font-family: var(--font-primaria);
+  font-weight: 700;
+  visibility: visible;
+}
+
+.retangulo {
+  width: 400px;
+  height: 944px;
+  background-color: var(--color-retangulo);
+  border-radius: 32px;
+  position: absolute;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.notaRodape {
+  color: #343a40;
+  font-size: 1.25rem;
+  font-family:  var(--font-primaria);
+  font-weight: 700;
+}
+
+
+
+@media (max-width: 1200px) {
+  .texto {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+
+  .cabecalho {
+    margin-bottom: 20px;
+    align-items: center;   
+
+  }
+
+  .mEscuro {
+    font-size: 1rem;
+    margin-left: 1%;
+    
+  }
+
+  .logo {
+    width: 50%;
+    padding: 10%; 
+  }
+
+  .switch{
+    width: 10%;
+  }
+
+
+  .setorPrimario {
+    width: 100%;
+    justify-content: space-between; 
+  }
+
+  .insTexto {
+    width: 90%; 
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 5%; 
+    font-size: 1.5rem; 
+    margin-left: 5%;
+  }
+
+  .textoAviso {
+    font-size: 0.8rem; 
+  }
+
+
+
+  .apresentacao__botoes {
+    justify-content: center; 
+  }
+
+  .b__criptografar,
+  .b__descriptografar {
+    padding: 3%;
+    width: 40%;
+  }
+
+  .saida__texto {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .caixa__saida {
+    width: 80%;
+    height: 150px;
+    margin-top: 10px;
+    top: 450px;
+  }
+
+  .b__copiar {
+    width: 350%; 
+    margin-top: 200px; 
+    padding: 26%; 
+  }
+
+  .imagem__sTexto {
+    display: none; 
+  }
+
+  .retangulo {
+    margin-top: 20px; 
+    width: 90%;
+    height: 300px;
+  }
+
+  .mensagem,
+  .mensagemDecript {
+    width: 70%;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 60px; 
+  }
+
+  .mensagem {
+    font-size: 1.5rem;
+  }
+
+  .mensagemDecript {
+    font-size: 1rem;
+  }
+
+  .rodape {
+    margin-top: 40px; 
+    align-items: center;
+  }
+
+  .notaRodape {
+    font-size: 0.8rem;
+    text-align: center; 
+  }
+}
+
+  
