@@ -120,7 +120,8 @@ body {
 .dark-mode .mensagem,
 .dark-mode .mensagemDecript,
 .dark-mode .notaRodape,
-.dark-mode .mEscuro {
+.dark-mode .mEscuro
+.dark-mode .caixa__saida{
   color: var(--modo-escuro-color);
 }
 
@@ -248,7 +249,7 @@ body {
   border: none;
   resize: none;
   padding: 24px 0;
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   font-family: var(--font-primaria);
   font-weight: 400;
   position: absolute;
