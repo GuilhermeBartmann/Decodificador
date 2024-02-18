@@ -1,3 +1,8 @@
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+}
+ 
  function criptografarTexto() {
     const textoEntrada = document.getElementById('textoEntrada').value;
     let textoSaidaCriptografado = '';
