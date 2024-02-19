@@ -12,10 +12,11 @@
   --color: #F6F6F6;
   --color-decript: #0A3871;
   --color-retangulo: #FFFFFF;
+  --color-textos-: #0A3871;
 
   /* Modo Escuro */
   --modo-escuro-bg: #232424;
-  --modo-escuro-color: #22E4FD;
+  --modo-escuro-color: #6b6b6b;
   --modo-escuro-bg-elementos: #FFFFFF;
   --botao-modo-claro: #0A3871;
   --botao-modo-escuro: #9b9b9b;
@@ -62,7 +63,7 @@ body {
   position: relative;
   display: inline-block;
   width: 2%;
-  height: 20px;
+  height: 1.25rem;
 }
 
 .switch input {
@@ -112,19 +113,27 @@ body {
 
 
 .dark-mode  {
-  background-color: var(--modo-escuro-bg);
+  background: rgb(1,1,1);
+  background: linear-gradient(180deg, rgba(1,1,1,1) 3%, rgba(37,37,40,1) 58%, rgba(84,92,93,1) 100%);
   color: var(--modo-escuro-color);
+}
+
+.dark-mode .mEscuro,
+.dark-mode .notaRodape {
+  color: var(--color-textos-);
 }
 
 .dark-mode .textoAviso,
 .dark-mode .mensagem,
 .dark-mode .mensagemDecript,
-.dark-mode .notaRodape,
-.dark-mode .mEscuro
-.dark-mode .caixa__saida{
-  color: var(--modo-escuro-color);
+.dark-mode .caixa__saida {
+  color: var(--color-textos-);
 }
 
+.dark-mode .b__criptografar,
+.dark-mode .b__copiar {
+  background-color: var(--botao-modo-claro);
+}
 
 .dark-mode .insTexto,
 .dark-mode .retangulo {
@@ -177,6 +186,7 @@ body {
   border: none;
   background-color: var(--background);
   outline: none;
+  color: var(--color-textos-);
 }
 
 .apresentacao__botoes {
@@ -249,7 +259,7 @@ body {
   border: none;
   resize: none;
   padding: 24px 0;
-  font-size: 1.50rem;
+  font-size: 1.2rem;
   font-family: var(--font-primaria);
   font-weight: 400;
   position: absolute;
@@ -260,6 +270,7 @@ body {
   visibility: hidden;
   z-index: 1;
   margin-top: -20px;
+  color: var(--color-textos-);
 }
 
 ::-webkit-scrollbar {
@@ -356,6 +367,7 @@ body {
   .mEscuro {
     font-size: 1rem;
     margin-left: 1%;
+    margin-top: 4%;
     
   }
 
@@ -385,6 +397,11 @@ body {
 
   .textoAviso {
     font-size: 0.8rem;
+    left: 10%;
+  }
+
+  .imagemExclamacao {
+    left: 9%;
   }
 
   .apresentacao__botoes {
@@ -405,8 +422,8 @@ body {
   .caixa__saida {
     width: 80%;
     height: 150px;
-    margin-top: 10px;
-    top: 470px;
+    margin-top: 10%;
+    top: 480px;
   }
 
   .b__copiar {
@@ -453,4 +470,3 @@ body {
   }
 }
 
-  
